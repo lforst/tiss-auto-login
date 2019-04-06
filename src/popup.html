@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>
-      body {
-        width: 148px;
-        padding: 4px 8px 8px 8px;
-      }
-
-      a, a:visited {
-        color: #5f5f5f;
-      }
-
-      a:hover {
-        color: #222222;
-      }
-    </style>
+      <link rel="stylesheet" type="text/css" href="css/checkbox.css">
+      <link rel="stylesheet" type="text/css" href="css/popup.css">
   </head>
   <body>
-    Enable: <input type="checkbox" id="enabledCB"><br>
-    <a id="openSettings" href="">Configure credentials.</a>
+    <img src="img/logo.png" alt="TISS Auto Login Logo">
+
+    <div class="separator"></div>
+
+    <div class="md-checkbox">
+        <input id="enabledCB" type="checkbox">
+        <label for="enabledCB">Enabled</label>
+    </div>
+
+    <div class="separator"></div>
+
+    <p>Before you enable the extension, don't forget to <a id="openSettings" href="">configure your credentials</a>!</p>
+    
     <script src="js/popup.js"></script>
   </body>
 </html>
