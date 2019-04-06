@@ -14,11 +14,12 @@ chrome.storage.sync.get(['user', 'password'], function(result) {
   pw.value = decrypt(result.password);
 });
 
+// Fast promt to enable auto login directly from options page
 enableExtension.onclick = function(e) {
-  if (confirm('Enable Tiss Auto Clicker?')) {
+  if (confirm('Enable Tiss Auto Login?')) {
     chrome.storage.local.set({
       enabled: true,
-    }, function() {})
+    }, function() {});
   }
 }
 

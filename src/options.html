@@ -2,82 +2,7 @@
 <html>
 
 <head>
-	<style>
-		.wrapper {
-			border: 1px solid #808080;
-			width: 400px;
-			padding: 20px;
-			margin: 24px auto 0 auto;
-		}
-
-		#logo {
-			width: 100%;
-		}
-
-		.separator {
-			border-top: 1px solid #a1a1a1;
-			margin: 20px 0 22px 0;
-		}
-
-		.tutorial {
-			margin-bottom: 26px;
-			padding: 0 12px 0 12px;
-			color: #808080;
-		}
-
-		a, a:visited {
-			color: #5f5f5f;
-		}
-
-		a:hover {
-			color: #222222;
-		}
-
-		label {
-			line-height: 21px;
-		}
-
-		.credential-field {
-			display: flex;
-			justify-content: space-between;
-			width: 60%;
-			margin: 8px auto 0 auto;
-		}
-
-		.submit-field {
-			justify-content: flex-end;
-		}
-
-		#out {
-			color: green;
-			margin-right: 6px;
-		}
-
-		p {
-			margin: 12px 0 6px 0;
-		}
-
-		.contribution {
-			display: flex;
-			justify-content: space-between;
-			width: 430px;
-			margin: 0px auto 0 auto;
-		}
-
-		.contribution a, .contribution a:visited {
-			color: #a7a7a7;
-		}
-
-		footer {
-			position: fixed;
-			width: 700px;
-			max-width: 94%;
-			bottom: 0;
-			left: 50%;
-			transform: translateX(-50%);
-		}
-
-	</style>
+	<link rel="stylesheet" type="text/css" href="css/options.css">
 </head>
 
 <body>
@@ -86,7 +11,7 @@
 
 		<div class="separator"></div>
 
-		<p class="tutorial">Please enter the credentials <a target="_blank" rel="noopener noreferrer" href="https://iu.zid.tuwien.ac.at/AuthServ.portal">for this site (TISS)</a> below and afterwards don't forget to <a href="" id="enableExtension">enable the extension</a>. You can disable it by clicking on the extension's icon in the upper right corner of your browser.</p>
+		<p class="tutorial">Please enter the credentials <a target="_blank" rel="noopener noreferrer" href="https://iu.zid.tuwien.ac.at/AuthServ.portal">for this site (TISS)</a> below. Don't forget to <a href="" id="enableExtension">enable the extension</a> afterwards. You can disable/enable it by clicking on the extension's icon in the upper right corner of your browser.</p>
 		
 		<div class="separator"></div>
 
@@ -105,7 +30,7 @@
 		<p><b>Attention:</b></p>
 		<p>Your credentials are synchronized between your chrome instances. They will be slightly
 			obfuscated and need to be stored locally as well.</p>
-		<p>Please note that sadly, there is no way for this extension to safely encrypt your data. So keep people away from your machine!</p>
+		<p>Please note that sadly, there is no way for this extension to safely encrypt your data. So keep people away from your computer!</p>
 	</div>
 	<div class="contribution">
 		<a target="_blank" rel="noopener noreferrer" href="https://github.com/lforst/tiss-auto-login">Contribute on GitHub</a>
