@@ -20,7 +20,7 @@ Quick-ish method:
 Normal method:
 - Download and unzip `tiss-auto-login_X.X.X.zip` ([latest release desirable](https://github.com/lforst/tiss-auto-login/releases)).
 - Rename the unzipped directory to `tiss-auto-login`
-- Go to chrome *Extensions*. (chrome://extensions/)
+- Go to your Chrome *Extensions*. (chrome://extensions/)
 - Click to check *Developer mode*.
 - Click *Load unpacked extension...*.
 - In the file selector dialog:
