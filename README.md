@@ -10,7 +10,7 @@ Online services of the Vienna University of Technology (TU Wien) have infuriatin
 Simply provide your login credentials and TISS Auto Login will do all the hard work for you.
 
 ## Installation
-Quick-ish method:
+Quick-ish method (that sometimes won't work):
 - Download `tiss-auto-login_vX.X.X.crx` ([latest release desirable](https://github.com/lforst/tiss-auto-login/releases)).
 - Go to your Chrome *Extensions*. (chrome://extensions/)
 - Click to check *Developer mode*.
