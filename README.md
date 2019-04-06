@@ -5,7 +5,7 @@
 </sub>
 </h1>
 
-Online services of the Technical University of Vienna (TU Wien) have infuriatingly short session times. TISS Auto Login is a small and simple Chrome Extension that combats this high priority issue by automatically logging you back into TUWEL and TISS.
+Online services of the Vienna University of Technology (TU Wien) have infuriatingly short session times. TISS Auto Login is a small and simple Chrome Extension that combats this high priority issue by automatically logging you back into TUWEL and TISS.
 
 Simply provide your login credentials and TISS Auto Login will do all the hard work for you.
 
@@ -43,8 +43,8 @@ Your credentials will be synchronized between your chrome instances. They will b
 
 Please note that sadly, there is no way for this extension to safely encrypt this data, so keep people away from your computer!
 
-### Affiliation with the Technical University of Vienna (TU Wien)
-This extension (TISS Auto Login) is in no way affiliated with TISS (TU Wien Informations-Systeme & Services), the Technical University of Vienna (TU Wien) or any of its services. This is a private project of a student of the Technical University of Vienna under the MIT License.
+### Affiliation with Vienna University of Technology (TU Wien)
+This extension (TISS Auto Login) is in no way affiliated with TISS (TU Wien Informations-Systeme & Services), the Vienna University of Technology (TU Wien) or any of its services. This is a private project of a student of the Vienna University of Technology under the MIT License.
 
 ## Contribuiting
 If you have ideas on how to improve this extension feel free to open an Issue or create a pull request!
