@@ -4,6 +4,7 @@ let user = document.getElementById('user');
 let pw = document.getElementById('pw');
 let save = document.getElementById('save');
 let out = document.getElementById('out');
+let enableExtension = document.getElementById('enableExtension');
 
 let creds;
 
@@ -12,6 +13,14 @@ chrome.storage.sync.get(['user', 'password'], function(result) {
   user.value = decrypt(result.user);
   pw.value = decrypt(result.password);
 });
+
+enableExtension.onclick = function(e) {
+  if (confirm('Enable Tiss Auto Clicker?')) {
+    chrome.storage.local.set({
+      enabled: true,
+    }, function() {})
+  }
+}
 
 // Save credentials
 save.onclick = function(e) {

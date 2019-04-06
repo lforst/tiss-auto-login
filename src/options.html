@@ -1,18 +1,120 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <style>
-    </style>
-  </head>
-  <body>
-    <div>
-      Username: <input type="text" id="user"><br>
-      Password: <input type="password" id="pw"><br>
-      <input type="button" value="save" id="save">
-      <p id="out"></p>
-      <p>Please note that your credentials are synchronized between your chrome instances. They will also be slightly obfuscated and saved locally.</p>
-      <p>Sadly, there is no way to safely encrypt your data so keep people away from your machine!</p>
-    </div>
-  </body>
-  <script src="js/options.js"></script>
+
+<head>
+	<style>
+		.wrapper {
+			border: 1px solid #808080;
+			width: 400px;
+			padding: 20px;
+			margin: 24px auto 0 auto;
+		}
+
+		#logo {
+			width: 100%;
+		}
+
+		.separator {
+			border-top: 1px solid #a1a1a1;
+			margin: 20px 0 22px 0;
+		}
+
+		.tutorial {
+			margin-bottom: 26px;
+			padding: 0 12px 0 12px;
+			color: #808080;
+		}
+
+		a, a:visited {
+			color: #5f5f5f;
+		}
+
+		a:hover {
+			color: #222222;
+		}
+
+		label {
+			line-height: 21px;
+		}
+
+		.credential-field {
+			display: flex;
+			justify-content: space-between;
+			width: 60%;
+			margin: 8px auto 0 auto;
+		}
+
+		.submit-field {
+			justify-content: flex-end;
+		}
+
+		#out {
+			color: green;
+			margin-right: 6px;
+		}
+
+		p {
+			margin: 12px 0 6px 0;
+		}
+
+		.contribution {
+			display: flex;
+			justify-content: space-between;
+			width: 430px;
+			margin: 0px auto 0 auto;
+		}
+
+		.contribution a, .contribution a:visited {
+			color: #a7a7a7;
+		}
+
+		footer {
+			position: fixed;
+			width: 700px;
+			max-width: 94%;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+	</style>
+</head>
+
+<body>
+	<div class="wrapper">
+		<img src="img/logo.png" alt="TISS Auto Login Logo" id="logo">
+
+		<div class="separator"></div>
+
+		<p class="tutorial">Please enter the credentials <a target="_blank" rel="noopener noreferrer" href="https://iu.zid.tuwien.ac.at/AuthServ.portal">for this site (TISS)</a> below and afterwards don't forget to <a href="" id="enableExtension">enable the extension</a>. You can disable it by clicking on the extension's icon in the upper right corner of your browser.</p>
+		
+		<div class="separator"></div>
+
+		<div class="credential-field">
+			<label>Username:</label><input type="text" id="user">
+		</div>
+		<div class="credential-field">
+			<label>Password:</label><input type="password" id="pw">
+		</div>
+		<div class="credential-field submit-field">
+			<label id="out"></label><input type="button" value="save" id="save">
+		</div>
+
+		<div class="separator"></div>
+
+		<p><b>Attention:</b></p>
+		<p>Your credentials are synchronized between your chrome instances. They will be slightly
+			obfuscated and need to be stored locally as well.</p>
+		<p>Please note that sadly, there is no way for this extension to safely encrypt your data. So keep people away from your machine!</p>
+	</div>
+	<div class="contribution">
+		<a target="_blank" rel="noopener noreferrer" href="https://github.com/lforst/tiss-auto-login">Contribute on GitHub</a>
+		<a target="_blank" rel="noopener noreferrer" href="https://github.com/lforst/tiss-auto-login/graphs/contributors">Authors</a>
+	</div>
+	<footer>
+		<p>This extension (TISS Auto Login) is in no way affiliated with TISS (TU Wien Informations-Systeme & Services), the Technical University of Vienna (TU Wien) or any of its services. This is a private project of a student of the Technical University of Vienna under the MIT License.</p>
+	</footer>
+</body>
+<script src="js/options.js"></script>
+
 </html>
