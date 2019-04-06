@@ -11,14 +11,14 @@ Simply provide your login credentials and TISS Auto Login will do all the hard w
 
 ## Installation
 Quick-ish method:
-- Download `tiss-auto-login_X.X.X.crx` ([latest release desirable](https://github.com/lforst/tiss-auto-login/releases)).
+- Download `tiss-auto-login_vX.X.X.crx` ([latest release desirable](https://github.com/lforst/tiss-auto-login/releases)).
 - Go to your Chrome *Extensions*. (chrome://extensions/)
 - Click to check *Developer mode*.
 - Now drag and drop the `tiss-auto-login.crx` file into the chrome window. Make sure you are still on the extensions page!
 - Click on *Add extension*.
 
 Normal method:
-- Download and unzip `tiss-auto-login_X.X.X.zip` ([latest release desirable](https://github.com/lforst/tiss-auto-login/releases)).
+- Download and unzip `tiss-auto-login_vX.X.X.zip` ([latest release desirable](https://github.com/lforst/tiss-auto-login/releases)).
 - Rename the unzipped directory to `tiss-auto-login`
 - Go to your Chrome *Extensions*. (chrome://extensions/)
 - Click to check *Developer mode*.
