@@ -10,8 +10,8 @@ let creds;
 
 // Load credentials into form
 chrome.storage.sync.get(['user', 'password'], function(result) {
-  user.value = decrypt(result.user);
-  pw.value = decrypt(result.password);
+  user.value = deobfuscate(result.user);
+  pw.value = deobfuscate(result.password);
 });
 
 // Fast promt to enable auto login directly from options page
@@ -26,15 +26,15 @@ enableExtension.onclick = function(e) {
 // Save credentials
 save.onclick = function(e) {
   chrome.storage.sync.set({
-    user: encrypt(user.value),
-    password: encrypt(pw.value),
+    user: obfuscate(user.value),
+    password: obfuscate(pw.value),
   }, function() {
     out.innerText = 'Saved.';
   })
 };
 
 // Obfuscate just a tiny bit just so we don't store cleartext credentials
-const encrypt = function(input) {
+const obfuscate = function(input) {
   let base = btoa(input);
   let char = String.fromCharCode(Math.floor(Math.random()*25 + 65));
   let i = Math.floor(base.length / 1.23);
@@ -47,7 +47,7 @@ const encrypt = function(input) {
 }
 
 // Deobfuscate
-const decrypt = function(input) {
+const deobfuscate = function(input) {
   let i = Math.floor((input.length-1) / 1.23);
   if (input.length % 2 == 1) {
     return atob(input.slice(0, i) + input.slice(i+1));
