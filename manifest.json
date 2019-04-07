@@ -20,11 +20,13 @@
   "content_scripts": [
     {
       "matches": ["https://iu.zid.tuwien.ac.at/AuthServ.authenticate?app=*"],
-      "js": ["src/js/tissAuth.js"]
+      "js": ["src/js/tissAuth.js"],
+      "run_at": "document_end"
     },
     {
       "matches": ["https://tuwel.tuwien.ac.at/auth/zid/index.php"],
-      "js": ["src/js/tuwelButtonClick.js"]
+      "js": ["src/js/tuwelButtonClick.js"],
+      "run_at": "document_end"
     }
   ],
   "icons": {
