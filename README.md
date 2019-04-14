@@ -39,9 +39,9 @@ After you're done, make sure to enable the extension by ticking the checkmark in
 ## Notice
 
 ### Your login data
-Your credentials will be synchronized between your chrome instances. They will be slightly obfuscated and need to be stored locally.
+Your credentials will be slightly obfuscated and need to be stored locally.
 
-Please note that sadly, there is no way for this extension to safely encrypt this data, so keep people away from your computer!
+Please note, that sadly, there is no way for this extension to safely encrypt this data, so keep people away from your computer!
 
 ### Affiliation with Vienna University of Technology (TU Wien)
 This extension (TISS Auto Login) is in no way affiliated with TISS (TU Wien Informations-Systeme & Services), the Vienna University of Technology (TU Wien) or any of its services. This is a private project of a student of the Vienna University of Technology under the MIT License.

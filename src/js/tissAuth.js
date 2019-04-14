@@ -17,7 +17,7 @@ const deobfuscate = function (input) {
 
 // Fill form and click login button
 const login = function () {
-  chrome.storage.sync.get(['user', 'password'], function (result) {
+  chrome.storage.local.get(['user', 'password'], function (result) {
     try {
       document.getElementsByName('name')[0].value = deobfuscate(result.user);
       document.getElementsByName('pw')[0].value = deobfuscate(result.password);

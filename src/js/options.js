@@ -9,7 +9,7 @@ let enableExtension = document.getElementById('enableExtension');
 let creds;
 
 // Load credentials into form
-chrome.storage.sync.get(['user', 'password'], function(result) {
+chrome.storage.local.get(['user', 'password'], function(result) {
   user.value = deobfuscate(result.user);
   pw.value = deobfuscate(result.password);
 });
@@ -19,13 +19,13 @@ enableExtension.onclick = function(e) {
   if (confirm('Enable Tiss Auto Login?')) {
     chrome.storage.local.set({
       enabled: true,
-    }, function() {});
+    });
   }
 }
 
 // Save credentials
 save.onclick = function(e) {
-  chrome.storage.sync.set({
+  chrome.storage.local.set({
     user: obfuscate(user.value),
     password: obfuscate(pw.value),
   }, function() {
