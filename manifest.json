@@ -25,8 +25,7 @@
     },
     {
       "matches": ["https://tuwel.tuwien.ac.at/auth/zid/*"],
-      "js": ["src/js/tuwelButtonClick.js"],
-      "run_at": "document_end"
+      "js": ["src/js/tuwelButtonClick.js"]
     }
   ],
   "icons": {
