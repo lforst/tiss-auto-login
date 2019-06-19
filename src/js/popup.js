@@ -4,13 +4,13 @@ let openSettings = document.getElementById('openSettings');
 let enabledCB = document.getElementById('enabledCB');
 
 // Get checkbox state on popup load
-chrome.storage.local.get('enabled', function(data) {
+chrome.storage.sync.get('enabled', function(data) {
   enabledCB.checked = data.enabled;
 }); 
 
 // Update synced storage when checkbox is toggled
 enabledCB.onchange = function(e) {
-  chrome.storage.local.set({enabled: e.target.checked});
+  chrome.storage.sync.set({enabled: e.target.checked});
 };
 
 // Open the extension's settings page with anchor tag

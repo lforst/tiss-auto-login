@@ -9,7 +9,7 @@ let enableExtension = document.getElementById('enableExtension');
 let creds;
 
 // Load credentials into form
-chrome.storage.local.get(['user', 'password'], function(result) {
+chrome.storage.sync.get(['user', 'password'], function(result) {
   user.value = deobfuscate(result.user);
   pw.value = deobfuscate(result.password);
 });
@@ -17,7 +17,7 @@ chrome.storage.local.get(['user', 'password'], function(result) {
 // Fast promt to enable auto login directly from options page
 enableExtension.onclick = function(e) {
   if (confirm('Enable Tiss Auto Login?')) {
-    chrome.storage.local.set({
+    chrome.storage.sync.set({
       enabled: true,
     });
   }
@@ -25,7 +25,7 @@ enableExtension.onclick = function(e) {
 
 // Save credentials
 save.onclick = function(e) {
-  chrome.storage.local.set({
+  chrome.storage.sync.set({
     user: obfuscate(user.value),
     password: obfuscate(pw.value),
   }, function() {
