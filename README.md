@@ -48,7 +48,3 @@ This extension (TISS Auto Login) is in no way affiliated with TISS (TU Wien Info
 
 ## Contribuiting
 If you have ideas on how to improve this extension feel free to open an Issue or create a pull request!
-
-Current issues you can help with:
-- Encrypt user data
-- Make options page / popup prettier
