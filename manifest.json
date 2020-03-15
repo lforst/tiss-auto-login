@@ -27,7 +27,10 @@
       "run_at": "document_end"
     },
     {
-      "matches": ["https://tuwel.tuwien.ac.at/auth/zid/*"],
+      "matches": [
+        "https://tuwel.tuwien.ac.at/auth/zid/*",
+        "https://tuwel.tuwien.ac.at/theme/university_boost/login/index.php*"
+      ],
       "js": ["src/js/tuwelButtonClick.js"]
     }
   ],
