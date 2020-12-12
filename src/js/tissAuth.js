@@ -1,12 +1,12 @@
 'use strict';
 
 // Check if enabled
-chrome.storage.sync.get('enabled', function (data) {
-  if (data.enabled) login();
+chrome.storage.sync.get('enabled', ({ enabled }) => {
+  if (enabled) login();
 });
 
 // Deobfuscate stored credentials
-const deobfuscate = function (input) {
+const deobfuscate = (input) => {
   let i = Math.floor((input.length - 1) / 1.23);
   if (input.length % 2 == 1) {
     return atob(input.slice(0, i) + input.slice(i + 1));
@@ -16,16 +16,10 @@ const deobfuscate = function (input) {
 }
 
 // Fill form and click login button
-const login = function () {
-  chrome.storage.sync.get(['user', 'password'], function (result) {
-    try {
-      document.getElementsByName('name')[0].value = deobfuscate(result.user);
-      document.getElementsByName('pw')[0].value = deobfuscate(result.password);
-      [...document.getElementsByTagName('input')].forEach((i) => {
-        if (i.type == 'submit' && i.value == 'OK') i.click();
-      });
-    } catch {
-      console.log('Tiss Auto Login: Something went wrong while trying to log you in.')
-    }
+const login = () => {
+  chrome.storage.sync.get(['user', 'password'], function ({ user, password }) {
+    document.querySelector("input#username[name='username']").value = deobfuscate(user);
+    document.querySelector("input#password[name='password']").value = deobfuscate(password);
+    document.querySelector("button#samlloginbutton[type='submit']").click();
   });
 }
